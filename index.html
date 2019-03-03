@@ -1,50 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href = "main.css" type = "text/css" rel = "stylesheet">
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="libraryContent">
-        <h1 class = "libText">Library</h1>
-      </div>
-      <div class="table">
-      <table id = "mainTable" class = "mainTable">
-        <tbody id = "tableBody">
-          <tr>
-            <th>Name of Book</th>
-            <th>Author</th>
-            <th>Pages</th>
-            <th>Completed?</th>
-            <th>Delete Book</th>
-          </tr>
-        <tr id = "exampleBook">
-          <td>Game of Thrones</td>
-          <td>George R.R. Martin</td>
-          <td>500</td>
-          <td><button id = "firstReadButton" class = "read" type="button" name="button" value = "read">Read</button></td>
-          <td><button id = "deleteBtn" class = "deleteButton" type="button" name="button">Delete</button></td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <button id = "newBook" class = "newBook" type="button" name="button">New Book</button>
-    <div id = "newBookForm" class = "newBookForm">
-      <input id = "bookName" type="text" name="bookName" placeholder="Book Name..">
-      <input id = "author" type="text" name="author" placeholder="Author">
-      <input id = "pages" type="text" name="pages" placeholder="Pages">
-      <div class="radioButtons">
-      <label id = "readOrNot" class = "readOrNot" for="readOrNot">
-        <div><input id = "read" type="radio" name="checked" value="Read">Read</div>
-        <div><input id = "hasNotRead" type="radio" name="checked" value="Has Not Read">Have Not Read</div>
-        <div><input id = "inProgress" type="radio" name="checked" value="Currently In Progress">In Progress</div>
-      </label>
-      </div>
-      <input id = "submit" type="submit" name="submit" value="Submit">
-    </div>
-    </div>
-  </body>
-  <script type="text/javascript" src = "main.js"></script>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Library</title>
+
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class = "container">
+<div class = "table">
+  <table>
+    <tbody class = "tableBody">
+    <tr>
+      <th class = "bookName">Book Name</th>
+      <th class = "bookAuthor">Author</th>
+      <th class = "bookPages">Pages</th>
+      <th class = "readStatus">Read Status</div>
+      <th class = "deleteBook">Delete Book</th>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<button id = "addBtn">Add Book</button>
+<div id = "form" class = "form">
+<div class = "formElement">
+<label>Book Name</label>
+<input type = "text" name = "bookName" placeholder = "Enter book name" id = "name">
+</div>
+<div class = "formElement">
+  <label>Author</label>
+  <input type = "text" placeholder = "Author" id = "author">
+</div>
+<div class = "formElement">
+  <label>Pages</label>
+  <input type = "text" placeholder = "Pages" id = "pages">
+</div>
+<div class = "formElement radioBtns">
+  <label>Read Status: </label>
+  <div><input type = "radio" placeholder = "Enter Read Status" id = "readStatus" value = "Read" name = "read"> Read</div>
+  <div><input type = "radio" placeholder = "Enter Read Status" id = "readStatus" value = "Have Not Read" name = "read"> Have Not Read</div>
+<div><input type = "radio" placeholder = "Enter Read Status" id = "readStatus" value = "In Progress" name = "read">In Progress</div>
+  <div>
+  <input type = "submit" placeholder = "submit" id = "submit">
+  </div>
+</div>
+</div>
+</div>
+
+
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
 </html>
